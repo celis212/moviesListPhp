@@ -14,11 +14,11 @@ function Arraychallenge($strAtrr){
 
     foreach($searchs as $search){
         //echo $search, " ",$comWord,"//<br>";
-        if (strncmp($search, $comWord, strlen($search)) === 0){
-            $firts = substr($comWord,0,strlen($search));
-            $second = substr($comWord,strlen($search),strlen($comWord));
+        if (strncmp($search, $comWord, strlen($search)) === 0){//search each word on the array in to the string based of the equal length
+            $firts = substr($comWord,0,strlen($search));//separate the firts word based on the length of the word
+            $second = substr($comWord,strlen($search),strlen($comWord));//separate the second word based on the rest of the comWord 
             echo $firts, " ",$second,"//<br>";
-            for($i=0; $i<count($searchs); $i++){
+            for($i=0; $i<count($searchs); $i++){//if the second word coincidence with the search we find the 2 word  
                 if (strcmp($searchs[$i], $second) === 0){
                     return "$firts".","."$second";
                 }
