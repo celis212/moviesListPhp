@@ -16,6 +16,7 @@
                 $location = $i;
             }
         }
+        
         //eliminated the biggest one
         array_splice($array, $location, 1);
         //orderer in a mayor way

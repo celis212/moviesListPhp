@@ -2,7 +2,7 @@
 $word = array("baseball", "a,all,b,ball,bas,base,cat,code,d,e,quit,z");
 $word2 = array("abcgefd","a,ab,abc,abcg,b,c,dog,e,efd,zzzz");
 
-print_r (Arraychallenge($word2));
+print_r (Arraychallenge($word));
 
 function Arraychallenge($strAtrr){
     $comWord = $strAtrr[0];
@@ -11,7 +11,21 @@ function Arraychallenge($strAtrr){
     echo"<br>";
     print_r($comWord);
     echo"<br>";
+    foreach($searchs as $search){
+        $numberOne = strpos($comWord,$search);
+        if($numberOne == 0){
+            $wordOne = substr($comWord, 0, strlen($search));
+            $wordTwo = substr($comWord, strlen($search));
+            echo $wordOne, " ",$wordTwo,"//<br>";
+            for($i=0; $i<count($searchs); $i++){
+                if (strcmp($searchs[$i], $wordTwo) === 0){
+                    return "$wordOne".","."$wordTwo ";
+                }
+            }
+        }
+    }
 
+    /*
     foreach($searchs as $search){
         //echo $search, " ",$comWord,"//<br>";
         if (strncmp($search, $comWord, strlen($search)) === 0){//search each word on the array in to the string based of the equal length
@@ -25,7 +39,7 @@ function Arraychallenge($strAtrr){
             }
             //echo "Los strings coinciden =$search";
         } // Coinciden, ya que hol === hol
-    }
+    }*/
     return "not possible";
 }
 ?>

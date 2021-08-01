@@ -8,21 +8,27 @@ if ( isset($_POST['cancel'] ) ) {
 $failure = false;
 $checkCount = true;
 
-$user = [];
+if(!$users){
+    $users = [];
+}
+
 
 if ( isset($_POST['user_name']) && isset($_POST['password_name']) ) {
-    for($i = 0; $i < count($user); $i++){
-        if($user[$i]['user'] === $_POST['user_name']){
+    for($i = 0; $i < count($users); $i++){
+        if($users[$i]['username'] === $_POST['user_name']){
             $failure = 'the user username already exists, please use another username';
             $checkCount = false;
             break;
         }
     }
     if($checkCount !== false){
-        $user[] = array(
-            'user' => $_POST['user_name'],
-            'password' => $_POST['password_name']
+        $user = array(
+            'username' => $_POST['user_name'],
+            'password' => $_POST['password_name'],
+            'number'=> $_POST['phone_number'],
+            'mail'=> $_POST['email']
         );
+        array_push($users, $user);
     }
 }
 

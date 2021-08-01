@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cesar Celis - Broken Rock Paper Scissors</title>
+        <title>Cesar Augusto Celis Marin b40e389f</title>
         <?php require_once "bootstrap.php"; ?>
     </head>
     <body>
