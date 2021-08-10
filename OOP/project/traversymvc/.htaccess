@@ -1,5 +1,7 @@
+#make sure are enable
 <IfModule mod_rewrite.c>
-  RewriteEngine on
+  #make sure run
+  RewriteEngine on 
   RewriteRule ^$ public/ [L]
   RewriteRule (.*) public/$1 [L]
 </IfModule>

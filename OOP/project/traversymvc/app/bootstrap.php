@@ -1,6 +1,6 @@
 <?php
-require_once'libraries/core.php';
-require_once'libraries/controller.php';
-require_once'libraries/database.php';
+require_once'libraries/Core.php';
+require_once'libraries/Controller.php';
+require_once'libraries/Database.php';
 
 ?>
