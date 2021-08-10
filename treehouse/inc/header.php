@@ -12,6 +12,11 @@
 			<h1 class="branding-title"><a href="index.php">Personal Media Library</a></h1>
 
 			<ul class="nav">
+				<?php
+				//configuramos la clase en caso de que sea activado cada unos de los links 
+				//configuramos el GET en cada unos de los link para que manden una respuesta ?cat=
+				?>
+				
                 <li class="books<?php if($section == "books"){echo " on";}?>"><a href="catalog.php?cat=books">Books</a></li>
                 <li class="movies<?php if($section == "movies"){echo " on";}?>"><a href="catalog.php?cat=movies">Movies</a></li>
                 <li class="music<?php if($section == "music"){echo " on";}?>"><a href="catalog.php?cat=music">Music</a></li>

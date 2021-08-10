@@ -1,5 +1,6 @@
 <?php 
     /**
+     * almacenamos toda la informacion relacionada con los items 
      * 100-> books
      * 200-> movies
      * 300-> music

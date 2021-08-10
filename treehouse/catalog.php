@@ -1,9 +1,10 @@
 <?php 
     include('inc/data.php');
+    include('inc/functions.php');
 
     $pageTitle = "Full Catalog";
     $section = null;
-
+    //segun la respuesta recibida del GET se configura el titulo y la variable $section
     if(isset($_GET["cat"])){
         if($_GET["cat"] == "books"){
             $pageTitle = "Books";
@@ -22,16 +23,28 @@
 
 <div class="section catalog page">
     <div class="wrapper">
-        <h1><?php echo $pageTitle; ?></h1> 
+        <h1><?php 
+            //this show us the line of search on the title of page 
+            //and give us the link to return to the full catalog 
+            if($section != null){
+                //&gt is grater than ">"
+                echo "<a href='catalog.php'>Full Catalog</a> &gt ";
+            }
+
+            echo $pageTitle; 
+        ?></h1> 
         <ul class="items">
             <?php
-                foreach($catalog as $item){
-                    echo "<li>
-                    <a href='#'>
-                    <img src='".$item['img']."' alt='".$item['title']."' />"
-                    ."<p>View Details</p>"
-                    ."</a></li>";
+                //call the info relative to the category
+                $category = array_category($catalog,$section);
+                foreach($category as $id){
+                    echo get_item_html($id,$catalog[$id]);
                 } 
+
+                //call catalog array and bring all the items
+                /*foreach($catalog as $id => $item){
+                    echo get_item_html($id, $item);
+                } */
             ?>
         </ul>
     </div>
