@@ -4,7 +4,7 @@
 //configuramos la unicacion de la image, su descripcion y un link de detalles
     function get_item_html($id, $item){
         $output =  "<li>
-        <a href='details.php?id='>
+        <a href='details.php?id=".$id."'>
         <img src='".$item['img']."' alt='".$item['title']."' />"
         ."<p>View Details</p>"
         ."</a></li>";
