@@ -1,35 +1,33 @@
 <?php 
-$pageTitle = 'Personal Media Library';
-$section = null;
-include("inc/header.php");?>
-    <div class="section catalog random">
-        <div class="wrapper">
-            <h2>May we suggest something?</h2>
-            <ul class="items">
-                <li>
-                <a href="#">
-                    <img src="img/media/forest_gump.jpg" alt="Forrest Gump">
-                    <p>View Details</p>
-                </a>
-                </li>
-                <li>
-                <a href="#">
-                    <img src="img/media/princess_bride.jpg" alt="The Princess Bride">
-                    <p>View Details</p>
-                </a></li>
-                <li>
-                <a href="#">
-                    <img src="img/media/elvis_presley.jpg" alt="Elvis Forever">
-                    <p>View Details</p>
-                </a>
-                </li>
-                <li>
-                <a href="#">
-                    <img src="img/media/garth_brooks.jpg" alt="No Fences">
-                    <p>View Details</p>
-                </a>
-                </li>								
-            </ul>
-        </div>
+//incluimos los archivos de data y functions 
+    include('inc/data.php');
+    include('inc/functions.php');
+//configuramos el titulo de la pagina 
+    $pageTitle = 'Personal Media Library';
+    $section = null;
+//incluimos la parte del header de la pagina 
+    include("inc/header.php");
+?>
+
+<div class="section catalog random">
+    <div class="wrapper">
+        <h2>Full Catalog</h2>
+        <ul class="items">
+        <?php
+        //llamamos cada uno de elementos almacenados en el array de data.php
+        //donde el $id es el key y $item es el value
+            //escogemos 4 items al azar con esta funcion  
+
+             foreach($catalog as $id => $item){
+                echo get_item_html($id, $item);
+             }
+            
+        ?>							
+        </ul>
     </div>
-<?php include("inc/footer.php");  ?>
+</div>
+
+<?php 
+//incluimos el footer de la pagina 
+include("inc/footer.php");  
+?>
