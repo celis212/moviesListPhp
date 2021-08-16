@@ -1,7 +1,13 @@
 #make sure are enable
 <IfModule mod_rewrite.c>
   #make sure run
-  RewriteEngine on 
+  #review the capital of On 
+  RewriteEngine On 
   RewriteRule ^$ public/ [L]
   RewriteRule (.*) public/$1 [L]
+  
 </IfModule>
+
+#log_errors = On
+#error_log = "/Users/cesarcelis/Documents/html/OOP/project/traversymvc/php-error.txt"
+#php_value error_log php-error.txt
