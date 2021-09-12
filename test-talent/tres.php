@@ -31,6 +31,9 @@ function longest_subset ($input = array()) {
             * the length is determinate by the long between $i and the difference
             */
             $substring = substr($inputString, $i, $length);
+            // echo $substring;
+            // echo "<br>";
+
             /**
              * find the position of the substring on a string 
              * in this case find if this substring is repeated base in the $i and the sub
@@ -38,6 +41,8 @@ function longest_subset ($input = array()) {
              */
             //echo strrpos($inputString,$substring),">","$i","<br>";
             $doesSubstringRepeat = strrpos($inputString,$substring) > $i;
+            echo $doesSubstringRepeat;
+            echo "<br>";
             //echo $doesSubstringRepeat,"<br>";
             /**
              * if substring is biggest than the longest return a true 

@@ -12,13 +12,13 @@ function Arraychallenge($strAtrr){
     print_r($comWord);
     echo"<br>";
     foreach($searchs as $search){
-        $numberOne = strpos($comWord,$search);
+        $numberOne = strpos($comWord,$search);//Encuentra la posición numérica de la primera ocurrencia
         if($numberOne == 0){
             $wordOne = substr($comWord, 0, strlen($search));
             $wordTwo = substr($comWord, strlen($search));
             echo $wordOne, " ",$wordTwo,"//<br>";
             for($i=0; $i<count($searchs); $i++){
-                if (strcmp($searchs[$i], $wordTwo) === 0){
+                if (strcmp($searchs[$i], $wordTwo) === 0){//Devuelve < 0 si str1 es menor que str2; > 0 si str1 es mayor que str2 y 0 si son iguales. 
                     return "$wordOne".","."$wordTwo ";
                 }
             }

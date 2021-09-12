@@ -1,35 +1,70 @@
 <?php
-    $arr = [25,20,13,12,8,3,4,1];
-    //echo var_dump($arr);
+    $ar = [3,5,-1,8,12];
+    //(3,5,-1,8,12)
+    //(5,7,16,1,2)
+    print_r($ar);
+    echo "<br>";
 
-    function check($array){
-        $largest = $array[0];
+    function check($arr){
+        $largest = $arr[0];
         $location = 0;
         $result = false;
         /**
          * find the bigeest one
 
          */
-        for($i=0; $i<count($array);$i++){
-            if($array[$i]>$largest){
-                $largest = $array[$i];
+        for($i=0; $i<count($arr);$i++){
+            if($arr[$i]>$largest){
+                $largest = $arr[$i];
                 $location = $i;
             }
         }
+
+        $sum = 0;
+        $mean = 0;
         
         //eliminated the biggest one
-        array_splice($array, $location, 1);
-        //orderer in a mayor way
-        arsort($array);
-        //print_r($array);
-        $sum = 0;
-        $temp = 0;
-        $mean2 = 0;
-        for($j=0;$j<count($array);$j++){
-            foreach($array as $arr){
-                $mean = $arr + $sum;
+        array_splice($arr, $location, 1);
+        for($j=0; $j<count($arr); $j++){
+            $part = (-$j);
+            $firts =  array_slice($arr, $part);
+            $second = array_slice($arr, 0, $part);
+            $arr = array_merge($firts, $second);
+
+            $mean = 0;
+            $sum = 0;
+            foreach($arr as $array){
+                $mean = $array + $sum;
+                var_dump($mean);
+                echo "<br>";
                 if($mean <= $largest){//if the sum is no biggest that the largest
-                    $sum = $arr + $sum;
+                    $sum = $array + $sum;
+                }
+            }
+
+            if($sum === $largest){
+                $result = true;
+                break;
+            }
+        }
+        var_dump($result);
+
+
+
+/* one way 
+        //orderer in a mayor way
+        //arsort($arr);
+        $sum = 0;
+        $mean = 0;
+        for($j=0;$j<count($arr);$j++){
+            $mean = 0;
+            $sum = 0;
+            foreach($arr as $array){
+                $mean = $array + $sum;
+                echo "$mean";
+                echo "<br>";
+                if($mean <= $largest){//if the sum is no biggest that the largest
+                    $sum = $array + $sum;
                 }
             }
             //verify if we find the result 
@@ -37,30 +72,19 @@
                 $result = true;
                 break;
             }
-            //change the order of the array
-            $mean2 = $array[0];
-            for($k=count($array);$k>0;--$k){
-                $temp = $array[$k];
-                $array[$k]=$mean2;
-                $mean2 = $temp;
-            }
-        }
-        /**foreach($array as $arr){
-            $mean = $arr + $sum;
-            if($mean <= $largest){//if the sum is no biggest that the largest
-                $sum = $arr + $sum;
-            }
-        }*/
 
-        print_r($array);
-        echo "<br>";
-        print_r($result);
-        echo "<br>";
-        echo $largest; 
-        echo "<br>"; 
-        echo $sum; 
-        echo "<br>"; 
+            //change the order of the arr
+            //1
+            $arr = array_reverse($arr);
+            //2
+            //$mean2 = $arr[0];
+            //for($k=count($arr);$k>0;--$k){
+            //    $temp = $arr[$k];//0=1  1=4   3  
+            //    $arr[$k]=$mean2; //1=0  4=1   
+            //    $mean2 = $temp;    //0=1  1=4
+            //}
+        }*/
         return $result;     
     }
-    check($arr)
+    check($ar)
 ?>
