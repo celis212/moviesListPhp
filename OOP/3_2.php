@@ -1,4 +1,4 @@
-
+<?php
 class Posts{
     public function __construct(){
         $this->postModel = $this->model('post');
@@ -19,5 +19,5 @@ class Posts{
         //echo $id;
     }
 }
-
+?>
 <h1><?php echo $data['title']; ?></h1>
