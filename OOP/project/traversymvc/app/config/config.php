@@ -1,9 +1,9 @@
 <?php
   // DB Params
   define('DB_HOST', 'localhost');
-  define('DB_USER', '_YOUR_USER_');
-  define('DB_PASS', '_YOUR_PASS_');
-  define('DB_NAME', '_YOUR_DBNAME_');
+  define('DB_USER', 'celis212');
+  define('DB_PASS', 'cesar123');
+  define('DB_NAME', 'pdo-mvc');
 
   // App Root
   // echo __FILE__; give us the path of the URL
@@ -16,5 +16,7 @@
   //define('URLROOT', '_YOUR_URL_');
 
   // Site Name
-  //define('SITENAME', 'TraversyMVC');
-  define('SITENAME', '_YOUR_SITENAME_');
+  define('SITENAME', 'TraversyMVC');
+  //define('SITENAME', '_YOUR_SITENAME_');
+
+  
