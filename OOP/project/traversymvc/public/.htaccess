@@ -1,8 +1,16 @@
+##make sure are enable
 <IfModule mod_rewrite.c>
+  ##verify if the module are enable
   Options -Multiviews
-  RewriteEngine On
+  ## put engine on
+  RewriteEngine on
+  ##be careful may doesnt work add the point at the begging
+  ##RewriteBase "/traversymvc/public"
+  ##
   RewriteCond %{REQUEST_FILENAME} !-d
+  ##
   RewriteCond %{REQUEST_FILENAME} !-f
   ##configurate to return all the info after the / no necesary ?
   RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]
+  ##
 </IfModule>
