@@ -21,28 +21,30 @@ paso tres
  */
     class Core {
         protected $controllerInfo = 'Pages';
-        protected $MethodInfo = 'index';
+        protected $methodInfo = 'index';
         protected $paramsInfo = [];
      
         //check in the controller's folder and set the controller 
         public function __construct(){
             $url = $this->getUrl();
 
-            //if the controller exists set as a controller 
-            if(file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
-                $this->currentController = ucwords($url[0]);
-                unset($url[0]);
+            //if the controller exists set as a controller
+            if($url){
+                if(file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
+                    $this->controllerInfo = ucwords($url[0]);
+                    unset($url[0]);
+                }
             }
-            
+
             //performs the connection and requirement the file
             require_once '../app/controllers/'. $this->controllerInfo . '.php';
 
             $this->controllerInfo = new $this->controllerInfo;
-            
+
             //if the second part of the URL exists in controllers will set as a method
             if(isset($url[1])){
                 if(method_exists($this->controllerInfo, $url[1])){
-                    $this->MethodInfo = $url[1];
+                    $this->methodInfo = $url[1];
                     unset($url[1]);
                 }
             }
@@ -51,7 +53,7 @@ paso tres
             $this->paramsInfo = $url ? array_values($url) : [];
 
             //Calling a callback with an array of parameters
-            call_user_func_array([$this->controllerInfo, $this->MethodInfo], $this->paramsInfo);
+            call_user_func_array([$this->controllerInfo, $this->methodInfo], $this->paramsInfo);
         }
 
         //Separation and filtering of the information in the URL
@@ -60,6 +62,7 @@ paso tres
                 $url = rtrim($_GET['url'], '/');
                 $url = filter_var($url, FILTER_SANITIZE_URL);
                 $url = explode('/', $url);
+                //var_dump($url);
                 return $url;
             }
         }

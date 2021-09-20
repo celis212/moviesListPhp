@@ -17,6 +17,3 @@ paso uno
     spl_autoload_register(function($nameOfFile){
         require_once 'libraries/' . $nameOfFile . '.php';
     });
-
-
-    

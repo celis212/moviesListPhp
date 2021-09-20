@@ -10,12 +10,11 @@
  * Login User with validation of username and password
  */
     class Users extends Controller {
-
         public function __construct(){
                 
-            }
+        }
         
-        public function register(){
+        public function signup(){
             if($_SERVER['REQUEST_METHOD'] == 'POST'){
                
             } else {
@@ -35,4 +34,21 @@
                 $this->view('users/signup', $data);
             }
         }
+
+        public function signin(){
+            if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+            } else {
+            // Init data
+                $data =[    
+                    'username' => '',
+                    'password' => '',
+                    'username_err' => '',
+                    'password_err' => '',        
+                ];
+
+                // Load view
+                $this->view('users/signin', $data);
+            }
+        } 
     }
