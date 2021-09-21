@@ -1,4 +1,3 @@
-paso siete
 <?php
 /**
  * Conect to Databases

@@ -1,4 +1,3 @@
-paso cinco
 <?php
 /**
  * base controller that load models and views 

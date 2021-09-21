@@ -1,4 +1,3 @@
-paso seis 
 <?php
     /*
     * searches, gets and registers in the database 
@@ -10,9 +9,9 @@ paso seis
             $this->databaseInfo = new Database('dbmovies');
         }
 
-        
         // Register movies
         public function register($dataInfo){
+            echo 'uno'; 
             $db_json = $this->databaseInfo->getDatabase();
             $input = array(
                 'movie' => $dataInfo['api'],

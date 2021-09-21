@@ -1,4 +1,3 @@
-paso tres 
 <?php
 /**
  * main App core class

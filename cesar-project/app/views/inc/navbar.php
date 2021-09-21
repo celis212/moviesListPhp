@@ -18,14 +18,21 @@
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URLDIRECTION; ?>/users/signup" style="color: #ffffff;">
-                        Sign Up</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo URLDIRECTION; ?>/users/signin" style="color: #ffffff;">
-                        Sign In</a>
-                </li>
+                <?php if(isset($_SESSION['user_email'])) : ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo URLDIRECTION; ?>/users/logout" style="color: #ffffff;">
+                            Sign Out</a>
+                    </li>
+                <?php else : ?>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo URLDIRECTION; ?>/users/signup" style="color: #ffffff;">
+                            Sign Up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo URLDIRECTION; ?>/users/signin" style="color: #ffffff;">
+                            Sign In</a>
+                    </li>
+                <?php endif; ?>
             </ul>
         </div>
     </div>

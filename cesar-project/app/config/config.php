@@ -1,4 +1,3 @@
- paso dos 
  <?php
 /**
  * define the constant of the URL to facilitate its use

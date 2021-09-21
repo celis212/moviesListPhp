@@ -1,4 +1,3 @@
-paso ocho 
 <?php
 /**
  * the default controller of the app set in the Core

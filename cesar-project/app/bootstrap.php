@@ -1,4 +1,3 @@
-paso uno
 <?php
 /**
  * performs the connection and requirement with all the files
@@ -9,8 +8,12 @@ paso uno
  *  - the name of the file name is has to be the same of the class name
  */
     // Load Config
-
     require_once 'config/config.php';
+
+    //load helpers
+    require_once 'helpers/url_helper.php';
+    require_once 'helpers/session_helper.php';
+    
     //require_once 'libraries/Database.php';
 
     //load libraries
