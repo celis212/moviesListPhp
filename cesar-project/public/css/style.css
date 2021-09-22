@@ -1,3 +1,4 @@
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;..");
-  }
+.navbar {
+  background-color: #691f74; 
+  color: #ffffff;
+}

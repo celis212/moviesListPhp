@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg mb-3" style="background-color: #691f74; color: #ffffff;">
+<nav class="navbar navbar-expand-lg  mb-3" >
     <div class="container container-fluid" >
         <a class="navbar-brand" href="<?php echo URLDIRECTION; ?>" style="color: #ffffff;">
         <?php echo NAMEOFSITE; ?></a>
