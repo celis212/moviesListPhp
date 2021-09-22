@@ -8,7 +8,7 @@
  *  - all these constants must be in capital letters
  */
    // URL
-   define('URLDIRECTION', 'http://localhost:81/cesar-project');
+   define('URLDIRECTION', 'http://localhost/');
 
    // NAME
    define('NAMEOFSITE', "Talent's Movies");
