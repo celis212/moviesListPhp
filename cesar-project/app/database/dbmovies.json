@@ -1,0 +1,53 @@
+{
+    "movie": [
+        {
+            "Title": "Schindler: The Real Story",
+            "Year": "1983",
+            "imdbID": "tt0180981",
+            "Type": "movie",
+            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BMTY4MTY0OTY4NV5BMl5BanBnXkFtZTcwOTgxMjMyMQ@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Hitler, Schindler and the Holocaust",
+            "Year": "1994",
+            "imdbID": "tt0375815",
+            "Type": "movie",
+            "Poster": "N\/A"
+        },
+        {
+            "Title": "Heroes of the Holocaust: Oskar Schindler",
+            "Year": "2020",
+            "imdbID": "tt11738092",
+            "Type": "movie",
+            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BZjk2OGViMTEtZTg4YS00MGQ1LTgwOGQtNDM5ZDI5OTVlNWQ5XkEyXkFqcGdeQXVyMTEzMjQzMDM1._V1_SX300.jpg"
+        },
+        {
+            "Title": "Schindler Space Architect",
+            "Year": "2021",
+            "imdbID": "tt12899770",
+            "Type": "movie",
+            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BYjcwMGFiZGMtMzMxNy00YmFiLWEwN2YtZDI3NmZhN2FmODMzXkEyXkFqcGdeQXVyMjU5Mjk4NzE@._V1_SX300.jpg"
+        },
+        {
+            "Title": "The British Schindler",
+            "Year": "2003",
+            "imdbID": "tt0444609",
+            "Type": "movie",
+            "Poster": "N\/A"
+        },
+        {
+            "Title": "A magyar Schindler (A v\u00e9dett h\u00e1z)",
+            "Year": "2016",
+            "imdbID": "tt9409628",
+            "Type": "movie",
+            "Poster": "N\/A"
+        },
+        {
+            "Title": "Varian Fry: The Artists' Schindler",
+            "Year": "1997",
+            "imdbID": "tt0250085",
+            "Type": "movie",
+            "Poster": "N\/A"
+        }
+    ]
+}
