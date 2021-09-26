@@ -50,7 +50,8 @@
                 // Validate Phone
                 if(empty($data['phone'])){
                     $data['phone_err'] = 'Please enter a valid Phone number';
-                } elseif(strlen($data['phone'])!=10  || !preg_match("/[+][0-9]{9}/", $data['phone'])){// Check valid format
+                    // Check valid format
+                } elseif(strlen($data['phone'])!=10  || !preg_match("/[+][0-9]{9}/", $data['phone'])){
                     $data['phone_err'] = 'only the "+" symbol and nine-digit numbers are accepted.';
                 }
 
@@ -87,8 +88,7 @@
 
                         flash('signup_success', 'You have created your user correctly!');
                         redirect('/users/signin');
-                        //$this->view('users/signin', $data);
-                        //echo '<script>alert("You have created your user correctly!")</script>';
+
                     }
                 
                 // Validated
@@ -171,12 +171,12 @@
                 $this->view('users/signin', $data);
             }
         } 
-      
+
+        //end session and return to sign in 
         public function logout(){
             unset($_SESSION['user_email']);
             unset($_SESSION['user_name']);
             session_destroy();
             redirect('/users/signin');
         }
-
     }

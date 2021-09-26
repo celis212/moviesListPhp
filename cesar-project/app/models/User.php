@@ -66,7 +66,8 @@
             // Check in all user
             if($db_data){
                 foreach($db_data as $user){
-                    if($user['username'] == $dataInfo['username'] && password_verify($dataInfo['password'], $user['password'])){
+                    if($user['username'] == $dataInfo['username'] && password_verify($dataInfo['password'], 
+                    $user['password'])){
                         $_SESSION['user_email'] = $user['email'];
                         $_SESSION['user_name'] = $user['username'];
                         redirect('/movies');

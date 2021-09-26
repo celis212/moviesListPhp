@@ -1,10 +1,10 @@
 <?php
+/**
+ * Flash message helper
+ * EXAMPLE - flash('register_success', 'You are now registered');
+ * DISPLAY IN VIEW - echo flash('register_success');
+ */
     session_start();
-
-    // Flash message helper
-    // EXAMPLE - flash('register_success', 'You are now registered');
-    // DISPLAY IN VIEW - echo flash('register_success');
-
     function flash($name = '', $message = '', $class = 'alert alert-success'){
         if(!empty($name)){
             if(!empty($message) && empty($_SESSION[$name])){//$_SESSION[$name] storage as a key
@@ -26,7 +26,8 @@
             }
         }
     }
-          
+
+    //verify if the session still on     
     function isLoggedIn(){
         if(isset($_SESSION['user_email'])){
             return true;

@@ -1,74 +1,53 @@
 {
     "movie": [
         {
-            "Title": "Captain America: The First Avenger",
-            "Year": "2011",
-            "imdbID": "tt0458339",
+            "Title": "Schindler: The Real Story",
+            "Year": "1983",
+            "imdbID": "tt0180981",
             "Type": "movie",
-            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BMTYzOTc2NzU3N15BMl5BanBnXkFtZTcwNjY3MDE3NQ@@._V1_SX300.jpg"
+            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BMTY4MTY0OTY4NV5BMl5BanBnXkFtZTcwOTgxMjMyMQ@@._V1_SX300.jpg"
         },
         {
-            "Title": "The Toxic Avenger",
-            "Year": "1984",
-            "imdbID": "tt0090190",
+            "Title": "Hitler, Schindler and the Holocaust",
+            "Year": "1994",
+            "imdbID": "tt0375815",
             "Type": "movie",
-            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BNzViNmQ5MTYtMmI4Yy00N2Y2LTg4NWUtYWU3MThkMTVjNjk3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+            "Poster": "N\/A"
         },
         {
-            "Title": "The Toxic Avenger Part II",
-            "Year": "1989",
-            "imdbID": "tt0098503",
+            "Title": "Heroes of the Holocaust: Oskar Schindler",
+            "Year": "2020",
+            "imdbID": "tt11738092",
             "Type": "movie",
-            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BODhiNTljYTctMmIzZC00ZGVkLTk2NmItN2RjMzY3ZTYyNDczXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BZjk2OGViMTEtZTg4YS00MGQ1LTgwOGQtNDM5ZDI5OTVlNWQ5XkEyXkFqcGdeQXVyMTEzMjQzMDM1._V1_SX300.jpg"
         },
         {
-            "Title": "Citizen Toxie: The Toxic Avenger IV",
-            "Year": "2000",
-            "imdbID": "tt0212879",
+            "Title": "Schindler Space Architect",
+            "Year": "2021",
+            "imdbID": "tt12899770",
             "Type": "movie",
-            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BMWI0NWY0ODUtNGY3Yy00ZDU1LTllYjUtMDFkYWEzZGQwY2I1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BYjcwMGFiZGMtMzMxNy00YmFiLWEwN2YtZDI3NmZhN2FmODMzXkEyXkFqcGdeQXVyMjU5Mjk4NzE@._V1_SX300.jpg"
         },
         {
-            "Title": "The Toxic Avenger Part III: The Last Temptation of Toxie",
-            "Year": "1989",
-            "imdbID": "tt0098502",
+            "Title": "The British Schindler",
+            "Year": "2003",
+            "imdbID": "tt0444609",
             "Type": "movie",
-            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BNjVlNzFjMGItMTEwYy00OTc0LWFmY2ItM2U0MmQyYWI5Njk3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+            "Poster": "N\/A"
         },
         {
-            "Title": "Avenger",
-            "Year": "2006",
-            "imdbID": "tt0473445",
+            "Title": "A magyar Schindler (A v\u00e9dett h\u00e1z)",
+            "Year": "2016",
+            "imdbID": "tt9409628",
             "Type": "movie",
-            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BMTMzMjMwMjcyNl5BMl5BanBnXkFtZTcwNTA1NDgzMQ@@._V1_SX300.jpg"
+            "Poster": "N\/A"
         },
         {
-            "Title": "Samurai Avenger: The Blind Wolf",
-            "Year": "2009",
-            "imdbID": "tt1243972",
+            "Title": "Varian Fry: The Artists' Schindler",
+            "Year": "1997",
+            "imdbID": "tt0250085",
             "Type": "movie",
-            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BMTAwNjc4MTkyNjBeQTJeQWpwZ15BbWU3MDg3NTQyMzI@._V1_SX300.jpg"
-        },
-        {
-            "Title": "The Dark Avenger",
-            "Year": "1955",
-            "imdbID": "tt0047975",
-            "Type": "movie",
-            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BMTI2MzMxOTgxN15BMl5BanBnXkFtZTcwOTk1MTMzMQ@@._V1_SX300.jpg"
-        },
-        {
-            "Title": "The masked avenger: Lagard\u00e8re",
-            "Year": "2003\u2013",
-            "imdbID": "tt0397508",
-            "Type": "series",
-            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BODQ5ZmYzZTktNTYzOS00YTVjLWFkODItZmY1MzI0NGYzYTlhXkEyXkFqcGdeQXVyMjgxMTkzOQ@@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Mask of the Avenger",
-            "Year": "1951",
-            "imdbID": "tt0043790",
-            "Type": "movie",
-            "Poster": "https:\/\/m.media-amazon.com\/images\/M\/MV5BZGQ5NzFmYWItODMwYi00MjA1LTk5YzQtZGQwYzg2ZTBmNDdmXkEyXkFqcGdeQXVyNDcxNDkxMjA@._V1_SX300.jpg"
+            "Poster": "N\/A"
         }
     ]
 }

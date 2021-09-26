@@ -17,6 +17,10 @@
         }    
         
         public function index(){
+            if(isLoggedIn()){
+                redirect('/movies');
+            }
+
            $data = [
                "title" => "Talent's Movies",
                 'description' => "You can see all the movies you want"
@@ -32,5 +36,4 @@
             ];
             $this->view('pages/about', $data);
         }
-
     }
