@@ -1,8 +1,5 @@
 <IfModule mod_rewrite.c>
-  ## garanteee that the rewrite is on
   RewriteEngine on 
-  ##rediret to public folder
   RewriteRule ^$ public/ [L]
-  ##add a value to the public/
   RewriteRule (.*) public/$1 [L]
 </IfModule>

@@ -4,5 +4,11 @@
         "phone": "+123456789",
         "email": "celis@gmail.com",
         "password": "$2y$10$pavf8mAc.hYxf5TcSBlktu.WRePoM75h7iRQDZ.vxastyNdrmfI8m"
+    },
+    {
+        "username": "sebastian",
+        "phone": "+123456789",
+        "email": "sebatis@vorrero.com",
+        "password": "$2y$10$yDuw9mmUPL3xAedsjE1E9u56g.TvF17PD0e1kE9RmgA0TwE68ufia"
     }
 ]

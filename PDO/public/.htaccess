@@ -1,8 +1,7 @@
 <IfModule mod_rewrite.c>
   Options -Multiviews
   RewriteEngine on
-  ##no matter we is your address you always gon to this direction 
-  RewriteBase /cesar-project/
+  RewriteBase /PDO/
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]

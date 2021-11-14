@@ -14,8 +14,9 @@
     class Pages extends Controller{
         public function __constructor(){
             $this->movieModel = $this->model('Movie');
-        }    
-        
+        }  
+
+        //if the user are loged we redirecto to movies 
         public function index(){
             if(isLoggedIn()){
                 redirect('/movies');

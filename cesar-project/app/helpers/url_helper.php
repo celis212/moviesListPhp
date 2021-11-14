@@ -8,5 +8,7 @@
      * @return string 
      */
     function redirect($page){
+        //send headers HTTP without format 
+        //location send headers call to the browser 
         header('location: ' . URLDIRECTION . $page);
     }
