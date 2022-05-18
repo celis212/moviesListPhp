@@ -1,0 +1,6 @@
+<?php
+    $pdo = new PDO('mysql:host=localhost;port=33008;dbname=misc', 'fred', 'zap');
+    //ERRMODE_SILENT IS THE DEFAULT WAY 
+    //ERRMODE_WARNING CONTINUE WITH THE CODE EVEN DO THEY FIND A MISTAKE
+    //ERRMODE_EXCEPTION STOP EXECUTING THE CODE
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
